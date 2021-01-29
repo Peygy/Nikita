@@ -1,0 +1,19 @@
+<article>
+    <header>
+        <h2>Что у вас за рецепт?</h2>
+    </header>  
+    <form>
+        <div style="display: block; ">
+            Название рецепта <input [(ngModel)] = 'recipe.name' name="name">
+        </div>
+        <div style="display: block;">
+            Автор <input [(ngModel)] = 'recipe.autor' name="autor">
+        </div>
+        <div style="display: block; ">
+            Инструкция к готовке <input style="height: 200px;" [(ngModel)] = 'recipe.description' name="description">
+        </div>
+        <div style="text-align: center;">
+            <button id="assept" type="submit" (click)="AddInArray()">Готово</button>
+        </div>
+    </form>   
+</article>
